@@ -32,9 +32,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/CrossHair.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EnemySpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ProgressBar.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HealthBar.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CloseDoor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Zombie.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameController.cs" />
       </list>
     </option>
   </component>
@@ -81,7 +83,20 @@
       <workItem from="1607734134212" duration="5157000" />
       <workItem from="1607810570503" duration="19539000" />
       <workItem from="1607891240370" duration="4163000" />
-      <workItem from="1608042065931" duration="3320000" />
+      <workItem from="1608042065931" duration="11345000" />
+      <workItem from="1608650368017" duration="1885000" />
+      <workItem from="1608652693206" duration="2357000" />
+      <workItem from="1608656337767" duration="1776000" />
+      <workItem from="1608658152059" duration="5064000" />
+      <workItem from="1608663383798" duration="1163000" />
+      <workItem from="1608667986998" duration="2163000" />
+      <workItem from="1608670508539" duration="1810000" />
+      <workItem from="1608672372021" duration="1196000" />
+      <workItem from="1608674183801" duration="1740000" />
+      <workItem from="1608676037654" duration="1783000" />
+      <workItem from="1608677877887" duration="2243000" />
+      <workItem from="1608680277113" duration="808000" />
+      <workItem from="1609144783991" duration="1799000" />
     </task>
     <servers />
   </component>
@@ -92,5 +107,11 @@
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="425" y="197" key="run.anything.popup" timestamp="1608651510200">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="425" y="197" key="run.anything.popup/0.0.1536.864@0.0.1536.864" timestamp="1608651510200" />
   </component>
 </project>

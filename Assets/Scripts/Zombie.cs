@@ -10,10 +10,14 @@ public class Zombie : MonoBehaviour
     NavMeshAgent navMeshAgent;
     Player player;
     HealthBar healthBar;
+    public int minDam;
+    public int maxDam;
     
     CapsuleCollider capsuleCollider;
     Animator animator;
-    MovementAnimator movementAnimator;
+    public MovementAnimator movementAnimator;
+
+    private float dist;
     bool dead;
     
     // Start is called before the first frame update
@@ -32,10 +36,23 @@ public class Zombie : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        dist = Vector3.Distance(player.transform.position, gameObject.transform.position);
+        if (dist < 1.2)
+        {
+            animator.SetTrigger("atack");
+        }
         if (dead)
             return;
         navMeshAgent.SetDestination(player.transform.position);
-        transform.rotation = Quaternion.LookRotation(navMeshAgent.velocity.normalized);
+        if (navMeshAgent.velocity.normalized == Vector3.zero)
+        {
+            return;
+        }
+        else
+        {
+            transform.rotation = Quaternion.LookRotation(navMeshAgent.velocity.normalized);
+        }
+        
     }
     
     public void Kill()
@@ -54,7 +71,10 @@ public class Zombie : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            healthBar.TakeDamage(Random.Range(5,10));
+            if (dist < 1.2)
+            {
+                healthBar.TakeDamage(Random.Range(minDam,maxDam));
+            }
         }
     }
 }
