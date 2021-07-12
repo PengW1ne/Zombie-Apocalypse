@@ -19,7 +19,7 @@ public class GameController : MonoBehaviour
     public TextMeshProUGUI hightScore;
     private Player player;
     private int FullScore;
-
+    
     public Text scoreCounter;
 
     private void Start()
@@ -72,7 +72,7 @@ public class GameController : MonoBehaviour
         Time.timeScale = 0;
         menuPnl.SetActive(true);
         ContinueGamebtn.GetComponentInChildren<TextMeshProUGUI>().text = "Продолжить";
-        StartNewGamebtn.SetActive(true);
+        StartNewGamebtn.SetActive(true); 
     }
     
     public void SettingMenuOpen()
@@ -89,7 +89,6 @@ public class GameController : MonoBehaviour
     {
         lastScore.text = "Ваш последний результат: \n" + PlayerPrefs.GetInt("lastFullScore");
         hightScore.text = "Ваш лучший результат: \n" + PlayerPrefs.GetInt("hightFullScore");
-        
         scorePnl.SetActive(true);
     }
     
@@ -108,4 +107,6 @@ public class GameController : MonoBehaviour
         StartNewGamebtn.SetActive(true);
         ScoreMenuOpen();
     }
+    
+    
 }

@@ -34,9 +34,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/ProgressBar.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HealthBar.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CloseDoor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Zombie.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameController.cs" />
+        <option value="$PROJECT_DIR$/Assets/MusicController.cs" />
       </list>
     </option>
   </component>
@@ -97,6 +98,11 @@
       <workItem from="1608677877887" duration="2243000" />
       <workItem from="1608680277113" duration="808000" />
       <workItem from="1609144783991" duration="1799000" />
+      <workItem from="1609150038337" duration="894000" />
+      <workItem from="1609155195963" duration="1782000" />
+      <workItem from="1609157013205" duration="2095000" />
+      <workItem from="1609159252583" duration="1108000" />
+      <workItem from="1609162521782" duration="1492000" />
     </task>
     <servers />
   </component>

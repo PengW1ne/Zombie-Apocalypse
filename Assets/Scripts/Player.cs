@@ -24,6 +24,9 @@ public class Player : MonoBehaviour
     private GameController gameController;
     private HealthBar healthBar;
     private MovementAnimator movementAnimator;
+
+    public AudioSource shotSound;
+    public AudioSource reloadingPistolSound;
     
 
     public Transform gunBarrel;
@@ -95,6 +98,7 @@ public class Player : MonoBehaviour
             if (Input.GetMouseButtonDown(0))
             {
                 shotbool = true;
+                shotSound.Play();
                 var from = gunBarrel.position;
                 var target = crossHair.transform.position;
                 var to = new Vector3(target.x, from.y, target.z);
@@ -161,7 +165,8 @@ public class Player : MonoBehaviour
 
     IEnumerator ReloadingTime()
     {
-        yield return new WaitForSeconds(1.5f);
+        reloadingPistolSound.Play();
+        yield return new WaitForSeconds(2f);
         reloading = false;
         AmmoCounter.text = clipSize + " / ∞";
         ammoInClip = clipSize;

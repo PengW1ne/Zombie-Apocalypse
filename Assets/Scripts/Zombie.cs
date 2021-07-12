@@ -19,6 +19,9 @@ public class Zombie : MonoBehaviour
 
     private float dist;
     bool dead;
+
+    public AudioSource damageSound;
+    public AudioSource zombieDieSound;
     
     // Start is called before the first frame update
     void Start()
@@ -64,6 +67,7 @@ public class Zombie : MonoBehaviour
             Destroy(navMeshAgent);
             GetComponentInChildren<ParticleSystem>().Play();
             animator.SetTrigger("died");
+            zombieDieSound.Play();
         }
     }
     
@@ -74,6 +78,7 @@ public class Zombie : MonoBehaviour
             if (dist < 1.2)
             {
                 healthBar.TakeDamage(Random.Range(minDam,maxDam));
+                damageSound.Play();
             }
         }
     }
